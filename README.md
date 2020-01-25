@@ -75,19 +75,19 @@ Instance of a Game Being Played at a Moment
 
 Added Functionality Thinking of Future Requirements
 -----------------
--Multiple Players
--M X N Row For TicTacToe
--K Check 
-Like Tic Tac Toe is (3,3,3)
-Extend it to (M,N,K)
--can Change the Date Structure
--can Change the ui
+* Multiple Players
+* M X N Row For TicTacToe
+* K Check 
+* Like Tic Tac Toe is (3,3,3)
+* Extend it to (M,N,K)
+* can Change the Date Structure
+* can Change the ui
 
 TODO
 -----
--Improve Interactiveness
--Design Document
--Class Document
+ * Improve Interactiveness
+ * Design Document
+ * Class Document
 
 
 
