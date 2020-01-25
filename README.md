@@ -38,8 +38,14 @@ Directory Structure of Class Files
    - RunTest.class
   - Run.sh
 ````
+Maintainability 
+--------
+CodeBase is Managed over multiple directories so it is easy for it to manage and maintain the Code for extension and later versions.
+
 Design Plan 
 ----------------------------------
+![Class Diagram Rough Idea](https://drive.google.com/file/d/0B9JjoSJp1iKJRVFWY0Z2ek1jV2lfZW9LMzF3TDg4SmZ4MDNr/view?usp=sharing)
+
 ````
 Instance of a Game Being Played at a Moment 
 |''''''''''''''''''''''''''''''''''''''''''''''''''''''|
@@ -73,21 +79,22 @@ Instance of a Game Being Played at a Moment
 
 **RunTest** Runs The PlayGround
 
-Added Functionality Thinking of Future Requirements
+Added Functionality Thinking of Future Requirements (Flexibility)
 -----------------
 * Multiple Players
 * M X N Row For TicTacToe
 * K Check 
 * Like Tic Tac Toe is (3,3,3)
 * Extend it to (M,N,K)
-* can Change the Date Structure
-* can Change the ui
+* Change the Date Structure
 
-TODO
+Why I Think This Design is better
 -----
- * Improve Interactiveness
- * Design Document
- * Class Document
+````
+This Design is Good because I've Tried To Do Loose Coupling and use Composition rather than inheriting the things.
+This can be further extended to play on multiple systems after adding locking mechanisms or similar Techniques
+````
+##### Other Things which could be was Layered Structure we call the layer above for input and the layers calls other layer for input output and which again passes the data to other layer for processing hence a tightly coupled system hence I created a state which act as a data store only problem is multiple access or race condition when players are playing parallerly but here it is not the case for this structure.
 
 
 
